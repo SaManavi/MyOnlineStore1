@@ -7,10 +7,17 @@
     android:orientation="vertical"
     android:padding="4dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
+    tools:context=".Activity.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test TextView" />
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -32,23 +39,20 @@
             tools:text="پرتخفیف ترین ها" />
     </androidx.cardview.widget.CardView>
 
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+    </FrameLayout>
+
     <LinearLayout
+        android:id="@+id/fragment_container2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="پرفروش ترین ها"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+        android:orientation="vertical" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,6 +68,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/highscore_recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
@@ -82,6 +87,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/newest_recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>

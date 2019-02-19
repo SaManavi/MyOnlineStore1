@@ -1,7 +1,9 @@
-package com.example.myonlinestore1;
+package com.example.myonlinestore1.Activity;
 
 import android.os.Bundle;
 
+
+import com.example.myonlinestore1.R;
 
 import androidx.annotation.LayoutRes;
 import androidx.appcompat.app.AppCompatActivity;
